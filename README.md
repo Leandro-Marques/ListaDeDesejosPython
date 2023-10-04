@@ -60,6 +60,10 @@ Siga as instruções no console para usar as funcionalidades do sistema.
 - Exclusão de Produtos (Administrador)
 - Listagem de Usuários por Produto (Administrador)
 
+## Documentação
+
+   Os arquivos com o Caso de Uso, Diagrama de Caso de Uso, Diagrama de Classe e DER estão em anexo com suas respectivas descrições, sinta-se a vontade para estudar.
+
 ## Contribuição
 
 Sinta-se à vontade para contribuir com melhorias ou correções de bugs. Abra uma "issue" para discutir as alterações que você deseja fazer.
