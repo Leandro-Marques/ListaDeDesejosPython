@@ -240,7 +240,7 @@ def main():
                 # List wish list items
                 usuario_id = int(input("Digite o ID do usuário: "))
                 
-                # Check if the user exists
+               
                 usuario = Usuario().encontrar_usuario(usuario_id)
                 
                 if usuario:
