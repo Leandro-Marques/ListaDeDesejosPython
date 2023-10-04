@@ -34,7 +34,7 @@ Para rodar o sistema, você precisará do Python instalado em seu ambiente e da 
     host="localhost",
     user="root",
     password="root",
-    database="crud"
+    database="crud" )
 
 ## Uso
 
