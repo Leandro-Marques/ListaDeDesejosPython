@@ -1,0 +1,62 @@
+#### Herança e Polimorfismo ####
+
+## Exemplo 1:
+
+class Pessoa:
+    def __init__(self, nome, idade):
+        self.nome = nome
+        self.idade = idade
+
+    def apresentar(self):
+        print(f"Olá, meu nome é {self.nome} e tenho {self.idade} anos.")
+
+class Usuario(Pessoa):
+    def __init__(self, nome, idade, username):
+        # Chama o construtor da classe base (Pessoa)
+        super().__init__(nome, idade)
+        self.username = username
+
+    def apresentar(self):
+        # Sobrescreve o método apresentar da classe base (polimorfismo)
+        print(f"Olá, meu nome é {self.nome}, tenho {self.idade} anos. Meu nome de usuário é {self.username}.")
+
+# Cria um objeto Pessoa
+pessoa = Pessoa("João", 30)
+pessoa.apresentar()
+
+
+# Cria um objeto Usuario
+usuario = Usuario("Maria", 25, "maria123")
+usuario.apresentar()
+
+## Exemplo 2:
+
+class Animal:
+    def __init__(self, nome):
+        self.nome = nome
+
+    def fazer_som(self):
+        pass
+
+class Cachorro(Animal):
+    def fazer_som(self):
+        return f"{self.nome} faz 'Au Au!'"
+
+class Gato(Animal):
+    def fazer_som(self):
+        return f"{self.nome} faz 'Miau!'"
+
+# Função para fazer um animal fazer som, independentemente do tipo (polimorfismo aplicado)
+def fazer_som_do_animal(animal):
+    print(animal.fazer_som())
+
+
+# Criar objetos Cachorro e Gato
+cachorro = Cachorro("Caramelo")
+gato = Gato("Félix")
+
+# Fazer os animais fazerem som usando polimorfismo
+fazer_som_do_animal(cachorro)
+fazer_som_do_animal(gato)
+
+
